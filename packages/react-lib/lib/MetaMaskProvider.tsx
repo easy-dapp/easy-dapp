@@ -9,12 +9,10 @@ interface MetaMaskContextValues {
   connectToMetaMask: () => Promise<void>;
 }
 
-// Extend the Window interface to include the ethereum property
 interface CustomWindow extends Window {
   ethereum?: any;
 }
 
-// Step 2: Create a new React context
 export const MetaMaskContext = createContext<MetaMaskContextValues | undefined>(undefined);
 
 interface MetaMaskProviderProps {
@@ -22,7 +20,6 @@ interface MetaMaskProviderProps {
 }
 
 export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
-  // Step 3: Implement the context state
   const [isConnected, setIsConnected] = useState(false);
   const [account, setAccount] = useState<string>('');
   const [isInstalled, setIsInstalled] = useState(false);
@@ -66,7 +63,6 @@ export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
     }
   };
 
-  // Step 4: Return the necessary values from the custom hook
   const metaMaskValues: MetaMaskContextValues = {
     account,
     chainId,
@@ -75,7 +71,6 @@ export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
     connectToMetaMask,
   };
 
-  // Step 5: Wrap the application with the provider component
   return (
     <MetaMaskContext.Provider value={metaMaskValues}>
       {children}

@@ -28,7 +28,8 @@
     "dist", "./package.json"
   ],
   "scripts": {
-    "build": "rimraf ./dist && tsc"
+    "build": "rimraf ./dist && tsc",
+    "test": "ts-jest"
   },
   "dependencies": {
     "react": "^18.2.0",
