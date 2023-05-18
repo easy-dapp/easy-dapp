@@ -4,7 +4,7 @@
   "workspaces": [
     "packages/*",
     "examples/*",
-    "docs/*"
+    "./docs"
   ],
   "devDependencies": {
     "@jest/globals": "^29.5.0",
