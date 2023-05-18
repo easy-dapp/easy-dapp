@@ -2,7 +2,8 @@ import React, { createContext, useEffect, useState, useContext, ReactNode } from
 import Web3 from 'web3';
 
 interface MetaMaskContextValues {
-  account: string | null;
+  account: string;
+  chainId: string;
   isConnected: boolean;
   isInstalled: boolean;
   connectToMetaMask: () => Promise<void>;
@@ -23,8 +24,9 @@ interface MetaMaskProviderProps {
 export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
   // Step 3: Implement the context state
   const [isConnected, setIsConnected] = useState(false);
-  const [account, setAccount] = useState<string | null>(null);
+  const [account, setAccount] = useState<string>('');
   const [isInstalled, setIsInstalled] = useState(false);
+  const [chainId, setChainID] = useState<string>('');
 
   useEffect(() => {
     checkIfMetaMaskIsInstalled();
@@ -37,6 +39,7 @@ export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
       setIsInstalled(true);
       if (customWindow.ethereum.selectedAddress) {
         setAccount(customWindow.ethereum.selectedAddress);
+        setChainID(customWindow.ethereum.chainId);
         setIsConnected(true);
       }
     } else {
@@ -53,6 +56,7 @@ export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
         await customWindow.ethereum.request({ method: 'eth_requestAccounts' });
         const accounts = await web3.eth.getAccounts();
         setAccount(accounts[0]);
+        setChainID(customWindow.ethereum.chainId);
         setIsConnected(true);
       } else {
         console.log('Please install MetaMask.');
@@ -65,6 +69,7 @@ export function MetaMaskProvider({ children }: MetaMaskProviderProps) {
   // Step 4: Return the necessary values from the custom hook
   const metaMaskValues: MetaMaskContextValues = {
     account,
+    chainId,
     isConnected,
     isInstalled,
     connectToMetaMask,

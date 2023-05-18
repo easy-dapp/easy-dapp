@@ -1,12 +1,22 @@
-import { useMetaMaskConnect } from "@easy-dapp/react/dist"
+
+import { getBalance, useMetaMaskConnect, weiToEth } from "@easy-dapp/react"
 
 function App() {
- const {account, isConnected, isInstalled, connectToMetaMask} = useMetaMaskConnect()
- console.log(account, isConnected, isInstalled)
+ const {account, chainId, isConnected, isInstalled, connectToMetaMask} = useMetaMaskConnect()
+ console.log(account, chainId, isConnected, isInstalled)
+ 
+ async function test() {
+  console.log(account, chainId)
+    const balance = await getBalance(account, chainId)
+    const ethBalance = weiToEth(Number(balance))
+    console.log(ethBalance)
+ }
+ 
  return (
     <>
       <h1>React App</h1>
       <button onClick={connectToMetaMask}>Connect to MetaMask</button>
+      <button onClick={() => test()}>GetBalance</button>
     </>
   )
 }
