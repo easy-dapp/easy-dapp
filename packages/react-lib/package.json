@@ -35,10 +35,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "web3": "^1.10.0"
-  },
-  "external": [
-    "react",
-    "react-dom",
-    "web3"
-  ]
+  }
 }
