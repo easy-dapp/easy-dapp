@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "module": "esnext",
+      "lib": ["dom", "esnext"],
+      "importHelpers": true,
+      "declaration": true,
+      "sourceMap": true,
+      "strict": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": false, // Set this to false to generate JavaScript files
+      "outDir": "./dist",
+      //"rootDir": "./" // Specify the root directory of your source files
+    },
+    "include": ["lib"], // Specify the directory containing your source files
+    "exclude": ["node_modules", "build", "dist"]
+  }
