@@ -3,6 +3,15 @@
   "version": "0.0.2",
   "description": "Easy dApp React Package - Easily manage your dApp state and connect to the users wallet.",
   "author": "mail@phil-schmidtke.de",
+  "keywords": [
+    "ethereum",
+    "dapp",
+    "react",
+    "web3",
+    "state",
+    "wallet",
+    "provider"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/phil-schmidtke/easy-dapp.git"
