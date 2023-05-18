@@ -1,11 +1,12 @@
 {
-  "name": "core",
+  "name": "@easy-dapp/core",
   "version": "0.0.2",
-  "description": "> TODO: description",
+  "description": "Core of Easy dApp",
   "author": "phil.schmidtke <mail@phil-schmidtke.de>",
   "homepage": "https://github.com/phil-schmidtke/easy-dapp#readme",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

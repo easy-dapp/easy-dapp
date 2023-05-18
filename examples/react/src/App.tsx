@@ -1,5 +1,6 @@
 
-import { getBalance, useMetaMaskConnect, weiToEth } from "@easy-dapp/react"
+import { useMetaMaskConnect } from "@easy-dapp/react"
+import {weiToEth, getBalance} from "@easy-dapp/core"
 
 function App() {
  const {account, chainId, isConnected, isInstalled, connectToMetaMask} = useMetaMaskConnect()

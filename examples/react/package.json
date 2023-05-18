@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@easy-dapp/react": "file:../../packages/react-lib",
+    "@easy-dapp/core": "file:../../packages/core",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
