@@ -1,6 +1,6 @@
 {
   "name": "@easy-dapp/react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easy dApp React Package - Easily manage your dApp state and connect to the users wallet.",
   "author": "mail@phil-schmidtke.de",
   "keywords": [
