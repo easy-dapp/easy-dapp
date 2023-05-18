@@ -19,7 +19,9 @@
     "dist", "./package.json"
   ],
   "scripts": {
-    "build": "rimraf ./dist && tsc"
+    "build": "rimraf ./dist && tsc && npm run copy-win",
+    "copy": "cp ./README.md ./dist/README.md",
+    "copy-win": "@powershell copy ./README.md ./dist/README.md"
   },
   "dependencies": {
     "react": "^18.2.0",
