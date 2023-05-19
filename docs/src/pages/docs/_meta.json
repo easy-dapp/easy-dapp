@@ -1,0 +1,19 @@
+{
+    "index": "Introduction",
+    "guide": "",
+    "-- Themes": {
+      "type": "separator",
+      "title": "Themes"
+    },
+    "docs-theme": "",
+    "blog-theme": "",
+    "custom-theme": "",
+    "-- More": {
+      "type": "separator",
+      "title": "More"
+    },
+    "about-link": {
+      "title": "About Nextra",
+      "href": "/about"
+    }
+  }

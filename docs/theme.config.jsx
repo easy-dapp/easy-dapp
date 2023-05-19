@@ -17,6 +17,13 @@ export default {
         return {
           titleTemplate: '%s – Easy dApp',
         }
+      },
+      footer: {
+        text: (
+          <span>
+            Easy-dApp
+          </span>
+        )
       }
     // ...
   }

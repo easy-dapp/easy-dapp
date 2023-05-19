@@ -1,0 +1,14 @@
+{
+    "index": {
+      "type": "page",
+      "title": "Easy-dApp",
+      "display": "hidden",
+      "theme": {
+        "layout": "raw"
+      }
+    },
+    "docs": {
+      "type": "page",
+      "title": "Documentation" 
+    }
+  }
