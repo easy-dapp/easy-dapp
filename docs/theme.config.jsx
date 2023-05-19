@@ -12,6 +12,7 @@ export default {
         labels: '',
         useLink: ''
     },
+    darkMode: false,
     primaryHue: 280,
     useNextSeoProps() {
         return {
