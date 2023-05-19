@@ -1,16 +1,20 @@
 {
     "index": "Introduction",
-    "guide": "",
-    "-- Themes": {
+    "-- Core": {
       "type": "separator",
-      "title": "Themes"
+      "title": "Core"
     },
-    "docs-theme": "",
-    "blog-theme": "",
-    "custom-theme": "",
-    "-- More": {
+    "core-getting-started": "Getting Started",
+    "Wrappers": "",
+    "Helpers": "",
+    "-- React": {
       "type": "separator",
-      "title": "More"
+      "title": "React"
+    },
+    "Integration": "integration",
+    "-- Links": {
+      "type": "separator",
+      "title": "Links"
     },
     "about-link": {
       "title": "About Nextra",
