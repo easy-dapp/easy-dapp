@@ -17,7 +17,7 @@ describe("networks", () => {
   });
 
   it("should have all networks", () => {
-    expect(Object.keys(networks).length).toEqual(9);
+    expect(Object.keys(networks).length).toEqual(50);
   });
 
   it("should return rpc", () => {
