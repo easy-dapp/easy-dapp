@@ -1,4 +1,4 @@
-import {etherToWei, gweiToEther, gweiToWei, networks, weiToEther} from "../lib";
+import {etherToGwei, etherToWei, gweiToEther, gweiToWei, networks, weiToEther} from "../lib";
 
 describe("networks", () => {
     it("should be defined", () => {
@@ -27,5 +27,8 @@ describe("calc", () => {
 
     it("etherToWei", () => {
         expect(etherToWei(0.000000000000000001)).toEqual(1)
+    })
+    it("etherToGwei", () => {
+        expect(etherToGwei(0.000000001)).toEqual(1)
     })
 })
