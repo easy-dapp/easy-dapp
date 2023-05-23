@@ -13,3 +13,7 @@ export function weiToGwei(wei: number): number {
 export function gweiToWei(gwei: number): number {
     return gwei * 10 ** 9;
 }
+
+export function etherToWei(ether: number): number {
+    return ether * 10 ** 18;
+}
