@@ -10,6 +10,6 @@ export function weiToGwei(wei: number): number {
     return wei * 10 ** -9;
 }
 
-export function gweiToWei(wei: number): number {
-    return 0;
+export function gweiToWei(gwei: number): number {
+    return gwei * 10 ** 9;
 }
