@@ -1,27 +1,96 @@
 import Image from 'next/image'
 import eth from '../../public/eth.png'
+import { Network, Sliders, FunctionSquare } from 'lucide-react'
 
 <div className="max-w-7xl mx-auto">
-    <div className="my-8 lg:flex xl:mx-0 mx-4">
-        <h1 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r mt-6 from-white via-purple-300 to-purple-600 lg:w-3/5">Easily create decentralized Full Stack Applications</h1>
-        <Image className="mt-8 lg:mt-0" src={eth} alt="eth" width="450" height="250" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="581" height="370" viewBox="0 0 581 370" fill="none" className="absolute left-0 top-0 blur-md">
+    <g filter="url(#filter0_f_1_96)">
+    <path d="M129.323 11.0056C218.962 10.6799 313.587 24.5257 336.862 53.56C358.971 81.1416 288.687 104.579 216.461 119.71C155.298 132.523 78.4832 134.283 20.7759 119.779C-39.1036 104.728 -65.0013 78.7327 -41.2518 54.9337C-16.0976 29.7271 50.0724 11.2935 129.323 11.0056Z" fill="url(#paint0_linear_1_96)"/>
+    </g>
+    <defs>
+    <filter id="filter0_f_1_96" x="-290" y="-229" width="871" height="599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_1_96"/>
+    </filter>
+    <linearGradient id="paint0_linear_1_96" x1="45.2436" y1="41.5227" x2="178.005" y2="195.953" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00F0FF"/>
+    <stop offset="0.444282" stop-color="#278CFD"/>
+    <stop offset="1" stop-color="#5F00FB"/>
+    </linearGradient>
+    </defs>
+  </svg>
+    <div className="mb-8 mt-20 lg:flex xl:mx-0 mx-4">
+        <h1 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r mt-6 from-neutral-200 via-purple-400 to-purple-600 lg:w-3/5">Easily create decentralized Full Stack Applications</h1>
+        <Image className="mt-8 lg:mt-0" src={eth} alt="eth" width="450" height="250" className="select-none" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="951" height="653" viewBox="0 0 951 653" fill="none" className="absolute right-0 top-0 -z-10 blur-md">
+          <g filter="url(#filter0_f_1_95)">
+          <path d="M504.169 177.013C636.22 176.26 775.617 208.257 809.903 275.353C842.474 339.092 738.935 393.253 632.536 428.22C542.434 457.831 429.275 461.899 344.263 428.379C256.052 393.598 217.901 333.525 252.887 278.528C289.943 220.277 387.421 177.678 504.169 177.013Z" fill="url(#paint0_linear_1_95)"/>
+          </g>
+          <defs>
+          <filter id="filter0_f_1_95" x="0" y="-63" width="1056" height="755" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_1_95"/>
+          </filter>
+          <linearGradient id="paint0_linear_1_95" x1="380.308" y1="247.536" x2="677.244" y2="467.719" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#00F0FF"/>
+          <stop offset="0.444282" stop-color="#278CFD"/>
+          <stop offset="1" stop-color="#5F00FB"/>
+          </linearGradient>
+          </defs>
+        </svg>
     </div>
-    <div className="my-20 grid grid-cols-2 lg:grid-cols-4 gap-8 xl:mx-0 mx-4">
-        <div className="border p-4 rounded-lg">
-            <h2 className="text-xl font-bold">Core</h2>
-            <p>Get Stuff done fast!</p>
+    <div className="my-24 grid sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-14 xl:mx-0 mx-4">
+         <div className="flex"> 
+      <h3 className="cursor-pointer flex items-center text-8xl leading-none font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-blue-200 to-blue-800">
+        Core
+      </h3>
+    </div>
+    <div className="align-text-bottom flex">
+      <h3 className="cursor-pointer flex items-center text-6xl leading-none font-extrabold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-neutral-100 hover:via-neutral-300 hover:to-nuetral-500 text-white">
+        React
+      </h3>
+    </div>
+    <div className="align-text-bottom flex">
+      <h3 className="cursor-pointer flex items-center text-6xl leading-none font-extrabold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-neutral-100 hover:via-neutral-300 hover:to-nuetral-500 text-white">
+        Next
+      </h3>
+    </div>
+    <div className="align-text-bottom flex">
+      <h3 className="cursor-pointer flex items-center text-6xl leading-none font-extrabold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-neutral-100 hover:via-neutral-300 hover:to-nuetral-500 text-white">
+        Svelte
+      </h3>
+    </div>
+    <div className="align-text-bottom flex lg:col-span-2 lg:mx-auto">
+      <h3 className="cursor-pointer text-center flex items-center text-6xl leading-none font-extrabold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-neutral-100 hover:via-neutral-300 hover:to-nuetral-500 text-white">
+        CLI
+      </h3>
+    </div>
+    <div className="align-text-bottom flex lg:col-span-2 lg:mx-auto">
+      <h3 className="cursor-pointer text-center flex items-center text-6xl leading-none font-extrabold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-neutral-100 hover:via-neutral-300 hover:to-nuetral-500 text-white">
+        Hardhat
+      </h3>
+    </div>
+    </div>
+    <div className="mt-44 pb-32">
+      <div>
+        <h4 className="text-center text-2xl font-bold text-purple-700">Build Fast</h4>
+        <h3 className="text-4xl pb-2 text-center font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 via-neutral-300 to-nuetral-500">Setup, develop and deploy as fast and easy as possible</h3>
+      </div>
+      <div className="flex justify-between mt-32 pb-8">
+        <div className="flex">
+          <Network className="w-12 h-12 text-purple-500" />
+          <h3 className="ml-6 -mt-2 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-neutral-100 via-neutral-300 to-nuetral-500">50 + supported <br/> Networks</h3>
         </div>
-        <div className="border p-4 rounded-lg">
-            <h2 className="text-xl font-bold">React</h2>
+        <div className="flex">
+          <Sliders className="w-12 h-12 text-purple-500" />
+          <h3 className="ml-6 -mt-2 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-neutral-100 via-neutral-300 to-nuetral-500">easiest setup & <br/> integration</h3>
         </div>
-        <div className="border p-4 rounded-lg">
-            <h2 className="text-xl font-bold">Next</h2>
+        <div className="flex">
+          <FunctionSquare className="w-12 h-12 text-purple-500" />
+          <h3 className="ml-6 -mt-2 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-neutral-100 via-neutral-300 to-nuetral-500">100 + helper <br/> Functions</h3>
         </div>
-        <div className="border p-4 rounded-lg">
-            <h2 className="text-xl font-bold">Svelte</h2>
-        </div>
-        <div className="border p-4 rounded-lg">
-            <h2 className="text-xl font-bold">Hardhat</h2>
-        </div>
+      </div>
     </div>
 </div>
