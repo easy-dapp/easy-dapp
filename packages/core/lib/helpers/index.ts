@@ -1,2 +1,2 @@
 export {networks, getNetworkByChainId} from "./networks"
-export {weiToEth} from "./conversions"
+export {weiToEther, gweiToEther, weiToGwei, gweiToWei, etherToWei, etherToGwei} from "./conversions"

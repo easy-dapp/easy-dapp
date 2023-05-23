@@ -20,9 +20,17 @@
   },
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "ts-jest"
+    "test": "npx jest"
   },
   "bugs": {
     "url": "https://github.com/phil-schmidtke/easy-dapp/issues"
+  },
+  "dependencies": {
+    "web3": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "ts-jest": "^29.1.0",
+    "rimraf": "^5.0.1"
   }
 }

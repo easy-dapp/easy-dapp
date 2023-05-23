@@ -1,6 +1,6 @@
 
 import { useMetaMaskConnect } from "@easy-dapp/react"
-import {weiToEth, getBalance} from "@easy-dapp/core"
+import {weiToEther, getBalance} from "@easy-dapp/core"
 
 function App() {
  const {account, chainId, isConnected, isInstalled, connectToMetaMask} = useMetaMaskConnect()
@@ -9,7 +9,7 @@ function App() {
  async function test() {
   console.log(account, chainId)
     const balance = await getBalance(account, chainId)
-    const ethBalance = weiToEth(Number(balance))
+    const ethBalance = weiToEther(Number(balance))
     console.log(ethBalance)
  }
  
