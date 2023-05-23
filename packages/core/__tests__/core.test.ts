@@ -27,7 +27,8 @@ describe("networks", () => {
   it("should return network by chainId", () => {
     expect(getNetworkByChainId("0x1")).toEqual({
       name: "Ethereum Mainnet",
-      chainId: 1,
+      id: 1,
+      chainId: "0x1",
       shortName: "eth",
       chain: "ETH",
       rpcUrl: "https://eth.llamarpc.com",
@@ -38,7 +39,8 @@ describe("networks", () => {
     const networks = getNetworkByName("ethereum")
     expect(networks[0]).toEqual({
         name: "Ethereum Mainnet",
-        chainId: 1,
+        id: 1,
+        chainId: "0x1",
         shortName: "eth",
         chain: "ETH",
         rpcUrl: "https://eth.llamarpc.com",
