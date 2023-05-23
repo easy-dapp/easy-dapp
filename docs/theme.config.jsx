@@ -12,6 +12,7 @@ export default {
         labels: '',
         useLink: ''
     },
+    darkMode: false,
     nextThemes: {
       defaultTheme: 'dark',
     },

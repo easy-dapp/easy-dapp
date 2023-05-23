@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@splinetool/react-spline": "^2.2.6",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "lucide-react": "^0.220.0",
@@ -17,7 +16,8 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
     "@types/node": "16.11.19",
