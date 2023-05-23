@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "ts-jest"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/phil-schmidtke/easy-dapp/issues"
