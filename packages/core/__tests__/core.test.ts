@@ -5,6 +5,10 @@ describe("networks", () => {
         expect(networks).toBeDefined()
         expect(networks["0x1"]).toBeDefined()
     })
+
+    it("should have all networks", () => {
+        expect(Object.keys(networks).length).toEqual(9)
+    })
 }
 )
 
