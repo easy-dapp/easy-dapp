@@ -21,4 +21,7 @@ describe("calc", () => {
         expect(gweiToEther(1000000000)).toEqual(1)
     })
     
+    it("gweiToWei", () => {
+        expect(gweiToEther(0.000000001)).toEqual(1)
+    })
 })
