@@ -12,7 +12,9 @@ export default {
         labels: '',
         useLink: ''
     },
-    darkMode: false,
+    nextThemes: {
+      defaultTheme: 'dark',
+    },
     primaryHue: 280,
     useNextSeoProps() {
         return {
