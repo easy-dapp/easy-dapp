@@ -72,10 +72,38 @@ export const networks = {
     },
 }
 
-export function getNetworkByChainId(chainId: string): string {
+export function getRpcByChainId(chainId: string): string | null {
     const rpc = Object.values(networks).find((network) => network.chainId === Number(chainId))?.rpcUrl
     if (!rpc) {
-        return ""
+        return null
     }
     return rpc
 }
+
+export function getNetworkByChainId(chainId: string) : {
+    name: string;
+    chainId: number;
+    shortName: string;
+    chain: string;
+    rpcUrl: string;
+} | null {
+    const network = Object.values(networks).find((network) => network.chainId === Number(chainId))
+    if (!network) {
+        return null
+    }
+    return network
+}
+
+export function getNetworkByName(query: string) {
+    const filteredNetworks = Object.values(networks).filter(network =>
+      network.name.toLowerCase().includes(query.toLowerCase())
+    );
+  
+    const sortedNetworks = filteredNetworks.sort((a, b) => {
+      const aIndex = a.name.toLowerCase().indexOf(query.toLowerCase());
+      const bIndex = b.name.toLowerCase().indexOf(query.toLowerCase());
+      return aIndex - bIndex;
+    });
+  
+    return sortedNetworks;
+  }
