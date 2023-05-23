@@ -1,9 +1,19 @@
-import {networks} from "../lib";
-import {describe, expect, test} from '@jest/globals';
-describe("core", () => {
+import {gweiToEther, networks, weiToEther} from "../lib";
+
+describe("networks", () => {
     it("should be defined", () => {
         expect(networks).toBeDefined()
         expect(networks["0x1"]).toBeDefined()
     })
 }
 )
+
+describe("calc", () => {
+    it("weiToEther", () => {
+        expect(weiToEther(1000000000000000000)).toEqual(1)
+    })
+
+    it("gweiToEther", () => {
+        expect(gweiToEther(1000000000)).toEqual(1)
+    })
+})
