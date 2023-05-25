@@ -15,11 +15,12 @@ type ChainId = '0x1'|    '0x5'|    '0xaa36a7'|   '0x38'|
       '0x7a'|   '0x52'|   '0x53'|       '0x39'|
       '0x14'|   '0x15';
 
-export function getBalance(wallet: string, chainId: string | ChainId) {
+export async function getBalance(wallet: string, chainId: string | ChainId): Promise<number> {
     const rpc = getRpcByChainId(chainId)
     if (rpc && rpc.length > 2) {
         const web3 = new Web3(rpc)
-        return web3.eth.getBalance(wallet)
+        const balance = await web3.eth.getBalance(wallet)
+        return Number(balance)
     } else {
         return Promise.reject("Invalid chainId")
     }
